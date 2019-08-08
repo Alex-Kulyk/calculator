@@ -48,12 +48,11 @@ digitsAndOperations.forEach(digit => digit.addEventListener('click', digitsAndOp
 function digitsAndOperationsPressed(e) {
     e.preventDefault();
     display.value += e.target.innerText;
-
     if (e.target.innerText === 'c') {
-
         display.value = ' ';
     }
 }
+
 const equal = document.createElement('button');
 form.appendChild(equal);
 equal.classList.add('eq');
